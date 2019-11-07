@@ -1,3 +1,12 @@
 .spaced {
     margin-bottom: 1em;
 }
+
+.reinitialiser{
+        border-radius:12px 0 12px 0;
+        background: #d34836;
+        border:none;
+       width: 15%;
+       height: 30px;
+       color: white;
+}

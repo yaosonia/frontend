@@ -4,3 +4,10 @@ h1 {
 p {
     font-size: 200%;
 }
+
+.bouton{
+    background-color: rgb(93, 93, 199);
+}
+.bouton:hover{
+    background-color: aqua;
+}
