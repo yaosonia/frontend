@@ -21,8 +21,12 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
+<<<<<<< HEAD
               "src/assets",
               "src/_redirects"
+=======
+              "src/assets"
+>>>>>>> 790ca18b894308a4e79468c44d84430b1c52728d
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",

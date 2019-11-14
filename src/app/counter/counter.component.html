@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- html for home page -->
 <mat-card class="counters-card" *ngIf="the_counter && !_router.url.includes('/counter/')">
   <mat-card-header>
@@ -42,3 +43,18 @@
     <button mat-button (click)="increment()" class="bouton" title="Incrémenter">+</button>
     </mat-card-actions>
   </mat-card>
+=======
+<mat-card class="example-card" *ngIf="value">
+  <mat-card-header>
+    <mat-card-title>Compteur {{position}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p style="font-weight: bold;">
+      {{value.value}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="increment()" class="bouton">+</button>
+  </mat-card-actions>
+</mat-card>
+>>>>>>> 790ca18b894308a4e79468c44d84430b1c52728d
