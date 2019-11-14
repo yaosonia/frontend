@@ -1,0 +1,44 @@
+<!-- html for home page -->
+<mat-card class="counters-card" *ngIf="the_counter && !_router.url.includes('/counter/')">
+  <mat-card-header>
+    <mat-card-title>
+      <!-- <a target="_blank" href="https://lp4asgadot.herokuapp.com/counters/{{the_counter.id}}">
+        <h4> {{the_counter.name}}</h4>
+      </a> -->
+      <h4> {{the_counter.name}}</h4>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card-subtitle class="counter_value">{{the_counter.value}}</mat-card-subtitle>
+  </mat-card-content>
+  <mat-card-actions class="increment-button">
+    <button mat-button (click)="increment()" class="bouton" title="Incrémenter">+</button>
+  </mat-card-actions>
+</mat-card>
+
+<!-- html for details page of counter -->
+<mat-card class="counter-card" *ngIf="the_counter && _router.url.includes('/counter/')">
+  <mat-card-title class="title">
+    <h4> {{the_counter.name}}</h4>
+  </mat-card-title>
+  <table id='counter-details-table'cellspacing="30">
+    <thead>
+     <tr class="espace">
+       <th>Numero</th>
+       <th>Nom</th>
+       <th>Valeur</th>
+     </tr>
+   </thead>
+    <tbody>
+     <tr>
+       <td>{{the_counter.id}}</td>
+       <td>{{the_counter.name}}</td>
+       <td>{{the_counter.value}}</td>
+     </tr>
+   </tbody>
+  </table>
+  <mat-card-actions class="increment-button">
+    <button mat-button routerLink="" class="undo" title="Retour à l'accueil"><i class="material-icons">undo</i></button>
+    <button mat-button (click)="increment()" class="bouton" title="Incrémenter">+</button>
+    </mat-card-actions>
+  </mat-card>

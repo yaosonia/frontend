@@ -1,0 +1,29 @@
+h1 {
+  color : rgb(255, 74, 104);
+}
+p {
+  font-size: 200%;
+}
+
+.bouton{
+  background-color:green;
+  text-align: center;
+}
+.bouton:hover{
+  background-color: aqua;
+}
+
+.table{
+  border-spacing: 60px;
+}
+.counters-card{
+  margin: 0.5em;
+}
+
+.undo{
+  background-color:coral;
+}
+
+.undo:hover{
+  background-color: blueviolet;
+}

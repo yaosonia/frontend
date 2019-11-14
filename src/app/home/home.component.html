@@ -1,0 +1,9 @@
+<mat-card class="home">
+  <mat-card-title>
+      <h1>Compteurs</h1>
+  </mat-card-title>
+</mat-card>
+
+<div class="counters">
+    <app-counter  *ngFor="let counter of counterList" [id]="counter.id" ></app-counter>
+</div>
