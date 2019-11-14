@@ -1,5 +1,4 @@
 h1 {
-<<<<<<< HEAD
   color : rgb(255, 74, 104);
 }
 p {
@@ -28,17 +27,3 @@ p {
 .undo:hover{
   background-color: blueviolet;
 }
-=======
-    color : rgb(255, 74, 104);
-}
-p {
-    font-size: 200%;
-}
-
-.bouton{
-    background-color: rgb(93, 93, 199);
-}
-.bouton:hover{
-    background-color: aqua;
-}
->>>>>>> 790ca18b894308a4e79468c44d84430b1c52728d
