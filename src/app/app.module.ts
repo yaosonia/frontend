@@ -17,14 +17,6 @@ import { HttpClientModule }    from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { NgxActionCableModule, NgxActionCableConfiguration } from 'ngx-actioncable';
- 
-export function getNgxActionCableConfig(): NgxActionCableConfiguration {
-  let config = new NgxActionCableConfiguration('counters', 'wss://lp4asgadot.herokuapp.com/counters');
-  config.addUrl('another-ws-id', 'wss://.../cable'); // optional
-  return config;
-}
-
 
 @NgModule({
   declarations: [
@@ -46,11 +38,9 @@ export function getNgxActionCableConfig(): NgxActionCableConfiguration {
     MatCardModule,
     HttpClientModule,
     AppRoutingModule,
-    MatExpansionModule,
-    NgxActionCableModule.forConfig(getNgxActionCableConfig)
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
